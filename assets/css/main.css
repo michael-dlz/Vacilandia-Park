@@ -17,7 +17,7 @@ form, label, legend, table, caption, tbody,
 tfoot, thead, tr, th, td, article, aside,
 canvas, details, embed, figure, figcaption,
 footer, header, hgroup, menu, nav, output, ruby,
-section, summary, time, mark, audio, video {
+section, summary, time, mark, audio, video, i{
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -1813,7 +1813,7 @@ input, select, textarea {
 		input[type="password"]:focus,
 		input[type="email"]:focus,
 		textarea:focus {
-			border-color: #83d3c9;
+			border-color: #724C9F;
 		}
 
 	input[type="text"],
@@ -2034,35 +2034,6 @@ input, select, textarea {
 				padding-left: 0;
 			}
 
-/* Featured Icons */
-
-	ul.featured-icons {
-		cursor: default;
-		margin: -0.75em 0 0 0;
-		opacity: 0.35;
-		overflow: hidden;
-		position: relative;
-		list-style: none;
-		padding-left: 0;
-	}
-
-		ul.featured-icons li {
-			display: block;
-			float: left;
-			text-align: center;
-			width: 50%;
-			padding-left: 0;
-			margin-bottom: 1em;
-		}
-
-			ul.featured-icons li .icon {
-				display: inline-block;
-				font-size: 5.5em;
-				height: 1em;
-				line-height: 1.5em;
-				width: 1em;
-			}
-
 /* Buttons */
 
 	ul.buttons {
@@ -2168,8 +2139,8 @@ input, select, textarea {
 		input[type="reset"].primary,
 		button.primary,
 		.button.primary {
-			background: #83d3c9;
-			border-color: #83d3c9;
+			background: #724C9F;
+			border-color: #724C9F;
 			color: #fff !important;
 		}
 
@@ -2212,7 +2183,7 @@ input, select, textarea {
 		}
 
 		.wrapper.style2 {
-			background-color: #83d3c9;
+			background-color: #724C9F;
 			background-image: url("images/light-bl.svg"), url("images/light-br.svg");
 			background-position: bottom left, bottom right;
 			background-repeat: no-repeat, no-repeat;
@@ -2236,7 +2207,7 @@ input, select, textarea {
 			.wrapper.style2 .button.primary {
 				background: #fff;
 				border-color: #fff;
-				color: #83d3c9 !important;
+				color:#724C9F !important;
 			}
 
 				.wrapper.style2 input[type="button"].primary:hover,
@@ -2474,7 +2445,7 @@ input, select, textarea {
 			}
 
 			.dropotron > li:hover > a {
-				background: #83d3c9;
+				background: #724C9F;
 				color: #fff;
 			}
 
@@ -2536,6 +2507,7 @@ input, select, textarea {
 		padding: 6em 0;
 		text-align: center;
 		background-attachment: fixed;
+		height: 24cm;
 	}
 
 		#banner .inner {
