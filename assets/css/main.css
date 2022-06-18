@@ -2218,6 +2218,7 @@ input, select, textarea {
 			background-repeat: no-repeat, no-repeat;
 			background-size: 25em, 25em;
 			color: #fff;
+			background-attachment: fixed;
 		}
 
 			.wrapper.style2 input[type="button"]:hover,
@@ -2426,7 +2427,6 @@ input, select, textarea {
 				#header.alt nav ul li.active > a, #header.alt nav ul li:hover > a {
 					border: solid 1px;
 				}
-
 /* Dropotron */
 
 	.dropotron {
@@ -2524,10 +2524,10 @@ input, select, textarea {
 		}
 	}
 
+	
 	#banner {
 		background-attachment: scroll, scroll, scroll, fixed;
-		background-color: #724C9F;
-		background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("images/overlay.png"), url("../../images/pic03.png");
+		background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("../../images/vaci5.jpg");
 		background-position: bottom left, bottom right, top left, top center;
 		background-repeat: no-repeat, no-repeat, repeat, no-repeat;
 		background-size: 25em, 25em, auto, cover;
@@ -2535,6 +2535,7 @@ input, select, textarea {
 		cursor: default;
 		padding: 6em 0;
 		text-align: center;
+		background-attachment: fixed;
 	}
 
 		#banner .inner {
@@ -2546,11 +2547,14 @@ input, select, textarea {
 			-webkit-animation-fill-mode: forwards;
 			-ms-animation-fill-mode: forwards;
 			animation-fill-mode: forwards;
-			background: #714c9f63;
 			color: #fff;
 			display: inline-block;
 			padding: 3em;
 			text-align: center;
+		}
+
+		#banner .inner img{
+			width: 240px;
 		}
 
 			#banner .inner header {
@@ -2577,6 +2581,7 @@ input, select, textarea {
 				letter-spacing: 0.1em;
 				margin: 0;
 				text-transform: uppercase;
+				font-weight: bold;
 			}
 
 				#banner .inner p a {
@@ -2616,14 +2621,13 @@ input, select, textarea {
 			}
 
 	body.index #main {
-		padding-top: 5em;
+		margin-top: -7em;
 	}
 
 /* CTA */
 
 	#cta {
 		background-attachment: scroll, scroll, scroll, fixed;
-		background-color: #645862;
 		background-image: url("images/light-tl.svg"), url("images/light-tr.svg"), url("images/overlay.png"), url("../../images/banner.jpg");
 		background-position: top left, top right, top left, bottom center;
 		background-repeat: no-repeat, no-repeat, repeat, no-repeat;
@@ -3273,10 +3277,6 @@ input, select, textarea {
 					padding: 0 1.5em;
 				}
 
-					#banner .inner header h2 {
-						font-size: 1.5em;
-					}
-
 					#banner .inner p {
 						text-align: center;
 					}
@@ -3284,7 +3284,6 @@ input, select, textarea {
 					#banner .inner br {
 						display: none;
 					}
-
 		/* Main */
 
 			#main {
