@@ -2057,7 +2057,7 @@ input, select, textarea {
 		list-style: none;
 		padding-left: 0;
 		display: flex;
-		justify-content: right;
+		justify-content: center;
 		margin-top: 3cm;
 	}
 	
@@ -2648,14 +2648,6 @@ input, select, textarea {
 
 		/* Wrapper */
 
-			.wrapper {
-				margin-bottom: 4em;
-				padding: 4em 3em;
-			}
-
-				.wrapper.style4 {
-					padding: 3em;
-				}
 
 		/* Header */
 
@@ -2728,10 +2720,6 @@ input, select, textarea {
 
 				.wrapper.style1 {
 					padding: 0 2.5em;
-				}
-
-				.wrapper.style2 {
-					background-size: 15em;
 				}
 
 				.wrapper.style4 {
@@ -3069,7 +3057,7 @@ input, select, textarea {
 		text-align: center;
 		font-family: Serifblack;
 		font-size: 3rem;
-		margin-top: 1cm;
+		margin-top: 2cm;
 	}
 
 	#main .cards{
