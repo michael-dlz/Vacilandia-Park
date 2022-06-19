@@ -2484,7 +2484,7 @@ input, select, textarea {
 		background-position: center center;
 		color: #fff;
 		cursor: default;
-		text-align: left;
+		text-align: right;
 		background-attachment: fixed;
 		background-size: cover;
 	}
@@ -2499,7 +2499,6 @@ input, select, textarea {
 			-ms-animation-fill-mode: forwards;
 			animation-fill-mode: forwards;
 			color: #fff;
-			display: inline-block;
 			padding: 4em;
 			text-align: center;
 			margin-bottom: 3cm;
@@ -3075,4 +3074,36 @@ input, select, textarea {
 				transform: translateX(0);
 			}
 
+	}
+
+	#main .special{
+		padding: 0;
+		display: grid;
+		grid-template-columns: repeat(5, 1fr);
+		grid-template-rows: repeat(1, 1fr);
+		gap: 15px;
+		margin-top: 1cm;
+	}
+
+	#main .special .card{
+		width: 13rem;
+		padding: 0;
+	}
+
+	#main .special .card-img-top{
+		height: 17rem;
+	}
+
+	#main .special .card-body:nth-child(1){
+		text-align: left;
+		background-color: #77C043;
+	}
+
+	#main .special .card-body:nth-child(2){
+		text-align: left;
+		background-color: #FFD200;
+	}
+
+	#main .special .card-text{
+		color: #fff;
 	}
