@@ -2510,8 +2510,8 @@ input, select, textarea {
 		padding: 6em 0;
 		text-align: center;
 		background-attachment: fixed;
-		position: absolute;
 		width: 100%;
+		position: abosulte;
 	}
 
 		#banner .inner {
@@ -2573,18 +2573,15 @@ input, select, textarea {
 				margin: 2em 0 0 0;
 			}
 
-		.ols{
-			position: relative;
-		}
-	
-		.ols img{
-			width: 44.6cm;
-			z-index: -99;
-			filter: brightness(1.1);
-			mix-blend-mode: multiply;
-			margin-top: -6cm;
-		}
+			.ols{
+				position: relative;
+				margin-top: -15cm;
+				margin-bottom: -3cm;
+			}
 
+			.ols img{
+				width: 35.7cm;
+			}
 /* Main */
 
 	#main {
@@ -2830,6 +2827,7 @@ input, select, textarea {
 			header.special {
 				margin-bottom: 4em;
 				padding-top: 5em;
+				margin-top: 2cm;
 			}
 
 				header.special:before, header.special:after {
@@ -2897,6 +2895,7 @@ input, select, textarea {
 			#banner {
 				margin: 0;
 			}
+
 
 		/* Wrapper */
 
