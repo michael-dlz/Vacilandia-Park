@@ -2401,6 +2401,10 @@ input, select, textarea {
 				#header.alt nav ul li.active > a, #header.alt nav ul li:hover > a {
 					border: solid 1px;
 				}
+
+		#header .logo img{
+			width: 100px;
+		}
 /* Dropotron */
 
 	.dropotron {
@@ -2461,7 +2465,7 @@ input, select, textarea {
 	#banner {
 		background-image: linear-gradient( rgba(46, 47, 48, 0.5), rgba(33, 37, 43, 0.5) ), url("../../images/vaci5.png");
 		background-repeat: no-repeat;
-		background-position: center;
+		background-position: center center;
 		color: #fff;
 		cursor: default;
 		padding: 6em 0;
