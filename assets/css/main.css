@@ -2173,6 +2173,8 @@ input, select, textarea {
 
 /* Wrapper */
 
+
+
 	.wrapper {
 		margin-bottom: 5em;
 		padding: 5em;
@@ -2183,13 +2185,13 @@ input, select, textarea {
 		}
 
 		.wrapper.style2 {
-			background-color: #724C9F;
+			background-color: #2BABE2;
 			background-image: url("images/light-bl.svg"), url("images/light-br.svg");
 			background-position: bottom left, bottom right;
 			background-repeat: no-repeat, no-repeat;
 			background-size: 25em, 25em;
 			color: #fff;
-			background-attachment: fixed;
+			padding: 2cm;
 		}
 
 			.wrapper.style2 input[type="button"]:hover,
@@ -2273,13 +2275,13 @@ input, select, textarea {
 	}
 
 	#header {
-		background: #fff;
+		background: #432F87;
 		box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.075);
 		color: inherit;
 		cursor: default;
 		font-size: 0.8em;
 		left: 0;
-		padding: 1em 1.5em;
+		padding: 2em 1.5em;
 		position: fixed;
 		top: 0;
 		width: 100%;
@@ -2325,6 +2327,7 @@ input, select, textarea {
 						line-height: 1em;
 						padding: 0.6em 0.75em;
 						text-decoration: none;
+						color: white;
 					}
 
 					#header nav ul li input[type="button"],
@@ -2507,6 +2510,8 @@ input, select, textarea {
 		padding: 6em 0;
 		text-align: center;
 		background-attachment: fixed;
+		position: absolute;
+		width: 100%;
 	}
 
 		#banner .inner {
@@ -2554,6 +2559,8 @@ input, select, textarea {
 				margin: 0;
 				text-transform: uppercase;
 				font-weight: bold;
+				margin-top: 1cm;
+				font-size: 1.5rem;
 			}
 
 				#banner .inner p a {
@@ -2565,6 +2572,18 @@ input, select, textarea {
 			#banner .inner footer {
 				margin: 2em 0 0 0;
 			}
+
+		.ols{
+			position: relative;
+		}
+	
+		.ols img{
+			width: 44.6cm;
+			z-index: -99;
+			filter: brightness(1.1);
+			mix-blend-mode: multiply;
+			margin-top: -6cm;
+		}
 
 /* Main */
 
