@@ -3090,6 +3090,17 @@ input, select, textarea {
 		transition: 500ms;
 	}
 
+	@media screen and (max-width: 400px) {
+		#main .cards{
+			gap: 70px;
+		}
+
+		#main .cards .card{
+			width: 16rem;
+			height: 23rem;
+		}
+	}
+
     #main .cards .card:hover{
 		transform: scale(1.1, 1.1);
 	}
