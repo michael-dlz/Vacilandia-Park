@@ -3076,12 +3076,18 @@ input, select, textarea {
 
 	}
 
+	#main h1{
+		text-align: center;
+		font-family: Serifblack;
+		font-size: 3rem;
+		margin-top: 1cm;
+	}
+
 	#main .cards{
 		padding: 0;
 		display: grid;
 		grid-auto-rows: 20rem;
-		grid-template-columns: repeat(auto-fill, minmax(13rem, 1fr));
-		gap: 15px;
+		grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));
 		margin-top: 3cm;
 
 	}
@@ -3091,20 +3097,15 @@ input, select, textarea {
 		padding: 0;
 		margin-left: auto;
 		margin-right: auto;
+		transition: 500ms;
+	}
+
+    #main .cards .card:hover{
+		transform: scale(1.1, 1.1);
 	}
 
 	#main .cards .card-img-top{
 		height: 17rem;
-	}
-
-	#main .cards .card-body:nth-child(1){
-		text-align: left;
-		background-color: #77C043;
-	}
-
-	#main .cards .card-body:nth-child(2){
-		text-align: left;
-		background-color: #FFD200;
 	}
 
 	#main .cards .card-text{
