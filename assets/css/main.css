@@ -2501,17 +2501,15 @@ input, select, textarea {
 	
 	#banner {
 		background-attachment: scroll, scroll, scroll, fixed;
-		background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("../../images/vaci5.jpg");
-		background-position: bottom left, bottom right, top left, top center;
+		background-image: linear-gradient( rgba(46, 47, 48, 0.5), rgba(33, 37, 43, 0.5) ), url("images/light-bl.svg"), url("images/light-br.svg"), url("../../images/vaci5.jpg");
 		background-repeat: no-repeat, no-repeat, repeat, no-repeat;
-		background-size: 25em, 25em, auto, cover;
+		background-position: top;
 		color: #fff;
 		cursor: default;
 		padding: 6em 0;
 		text-align: center;
 		background-attachment: fixed;
 		width: 100%;
-		position: abosulte;
 	}
 
 		#banner .inner {
@@ -2525,7 +2523,7 @@ input, select, textarea {
 			animation-fill-mode: forwards;
 			color: #fff;
 			display: inline-block;
-			padding: 3em;
+			padding: 4em;
 			text-align: center;
 		}
 
@@ -2560,7 +2558,7 @@ input, select, textarea {
 				text-transform: uppercase;
 				font-weight: bold;
 				margin-top: 1cm;
-				font-size: 1.5rem;
+				font-size: 1rem;
 			}
 
 				#banner .inner p a {
@@ -2572,6 +2570,7 @@ input, select, textarea {
 			#banner .inner footer {
 				margin: 2em 0 0 0;
 			}
+
 
 			.ols{
 				position: relative;
