@@ -2456,60 +2456,18 @@ input, select, textarea {
 				border-top: 0;
 			}
 
-/* Banner */
-
-	@-moz-keyframes reveal-banner {
-		0% {
-			opacity: 0;
-		}
-
-		100% {
-			opacity: 1;
-		}
-	}
-
-	@-webkit-keyframes reveal-banner {
-		0% {
-			opacity: 0;
-		}
-
-		100% {
-			opacity: 1;
-		}
-	}
-
-	@-ms-keyframes reveal-banner {
-		0% {
-			opacity: 0;
-		}
-
-		100% {
-			opacity: 1;
-		}
-	}
-
-	@keyframes reveal-banner {
-		0% {
-			opacity: 0;
-		}
-
-		100% {
-			opacity: 1;
-		}
-	}
 
 	
 	#banner {
-		background-attachment: scroll, scroll, scroll, fixed;
-		background-image: linear-gradient( rgba(46, 47, 48, 0.5), rgba(33, 37, 43, 0.5) ), url("images/light-bl.svg"), url("images/light-br.svg"), url("../../images/vaci5.jpg");
-		background-repeat: no-repeat, no-repeat, repeat, no-repeat;
-		background-position: top;
+		background-image: linear-gradient( rgba(46, 47, 48, 0.5), rgba(33, 37, 43, 0.5) ), url("../../images/vaci5.png");
+		background-repeat: no-repeat;
+		background-position: center;
 		color: #fff;
 		cursor: default;
 		padding: 6em 0;
 		text-align: center;
 		background-attachment: fixed;
-		width: 100%;
+		background-size: cover;
 	}
 
 		#banner .inner {
@@ -2559,6 +2517,7 @@ input, select, textarea {
 				font-weight: bold;
 				margin-top: 1cm;
 				font-size: 1rem;
+				margin-bottom: 1.5cm;
 			}
 
 				#banner .inner p a {
@@ -2784,11 +2743,6 @@ input, select, textarea {
 					padding: 2.5em;
 				}
 
-		/* Banner */
-
-			#banner {
-				background-size: 15em, 15em, auto, cover;
-			}
 
 		/* Main */
 
@@ -3240,13 +3194,6 @@ input, select, textarea {
 					background-size: 10em;
 					padding: 1.5em 1.5em 3em 1.5em;
 				}
-
-		/* Banner */
-
-			#banner {
-				background-size: 10em, 10em, auto, cover;
-				padding: 6em 0;
-			}
 
 				#banner .inner {
 					background: none;
