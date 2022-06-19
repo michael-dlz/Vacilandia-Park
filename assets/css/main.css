@@ -2509,12 +2509,11 @@ input, select, textarea {
 			backdrop-filter: brightness(50%);
 		}
 
-		@media screen and (max-width: 900px){
+		@media screen and (max-width: 1000px){
 			#banner .inner{
 				width: 100%;
 			}
 		}
-			
 
 		#banner .inner img{
 			width: 200px;
@@ -2549,7 +2548,6 @@ input, select, textarea {
 
 			#banner .inner h2{
 				font-family: Serifblack;
-				font-size: 2.5em;
 				margin-top: 3cm;
 				text-align: left;
 			}
