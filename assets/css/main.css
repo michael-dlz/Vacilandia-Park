@@ -2479,9 +2479,9 @@ input, select, textarea {
 
 	
 	#banner {
-		background-image: linear-gradient( rgba(46, 47, 48, 0.5), rgba(33, 37, 43, 0.5) ), url("../../images/vaci5.png");
+		background-image: url("../../images/vaci5.png");
 		background-repeat: no-repeat;
-		background-position: center center;
+		background-position: left left;
 		color: #fff;
 		cursor: default;
 		text-align: right;
@@ -2502,6 +2502,9 @@ input, select, textarea {
 			padding: 4em;
 			text-align: center;
 			margin-bottom: 3cm;
+			width: 50%;
+			backdrop-filter: brightness(50%);
+			border-top-right-radius: 50%;
 		}
 
 		#banner .inner img{
@@ -2532,12 +2535,13 @@ input, select, textarea {
 				font-family: Centra;
 				margin-top: 2cm;
 				text-align: left;
+				margin-bottom: 3cm;
 			}
 
 			#banner .inner h2{
 				font-family: Serifblack;
 				font-size: 2.5em;
-				margin-top: 5cm;
+				margin-top: 3cm;
 				text-align: left;
 			}
 
@@ -3089,6 +3093,7 @@ input, select, textarea {
 		grid-auto-rows: 20rem;
 		grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));
 		margin-top: 3cm;
+		gap: 15px;
 
 	}
 
@@ -3110,4 +3115,16 @@ input, select, textarea {
 
 	#main .cards .card-text{
 		color: #fff;
+	}
+
+	.ols{
+		position: relative;
+		margin-top: -6cm;
+		margin-bottom: -2.5cm;
+		margin-left: auto;
+		margin-left: auto;
+	}
+
+	.ols img{
+		width: 50.7cm;
 	}
