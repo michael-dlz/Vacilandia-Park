@@ -2056,7 +2056,11 @@ input, select, textarea {
 		cursor: default;
 		list-style: none;
 		padding-left: 0;
+		display: flex;
+		justify-content: right;
+		margin-top: 3cm;
 	}
+	
 
 		ul.buttons:last-child {
 			margin-bottom: 0;
@@ -2201,11 +2205,10 @@ input, select, textarea {
 		}
 
 		.wrapper.style2 {
-			background-color: #2BABE2;
-			background-image: url("images/light-bl.svg"), url("images/light-br.svg");
-			background-position: bottom left, bottom right;
-			background-repeat: no-repeat, no-repeat;
-			background-size: 25em, 25em;
+			background: linear-gradient( rgba(46, 47, 48, 0.5), rgba(33, 37, 43, 0.5) ), url("../../images/pic03.png");
+			background-position: center center; 
+			background-repeat: no-repeat;
+			background-size: cover;
 			color: #fff;
 			padding: 2cm;
 		}
@@ -2215,7 +2218,9 @@ input, select, textarea {
 			.wrapper.style2 input[type="reset"]:hover,
 			.wrapper.style2 button:hover,
 			.wrapper.style2 .button:hover {
-				background: rgba(255, 255, 255, 0.15) !important;
+				background: #77C043;
+				color: white;
+				border: none;
 			}
 
 			.wrapper.style2 input[type="button"].primary,
@@ -2247,7 +2252,6 @@ input, select, textarea {
 			color: inherit;
 			padding: 4em;
 		}
-
 /* Header */
 
 	@-moz-keyframes reveal-header {
@@ -2292,7 +2296,6 @@ input, select, textarea {
 
 	#header {
 		background: transparent;
-		box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.075);
 		color: inherit;
 		cursor: default;
 		font-size: 0.8em;
@@ -2506,6 +2509,13 @@ input, select, textarea {
 			backdrop-filter: brightness(50%);
 		}
 
+		@media screen and (max-width: 900px){
+			#banner .inner{
+				width: 100%;
+			}
+		}
+			
+
 		#banner .inner img{
 			width: 200px;
 			margin-bottom: 3em;
@@ -2592,28 +2602,6 @@ input, select, textarea {
 		padding: 5em 5em 10em 5em;
 		text-align: center;
 	}
-
-		#footer .copyright {
-			font-size: 0.8em;
-			line-height: 1em;
-		}
-
-			#footer .copyright a {
-				color: inherit;
-			}
-
-			#footer .copyright li {
-				display: inline-block;
-				margin-left: 1em;
-				padding-left: 1em;
-				border-left: dotted 1px;
-			}
-
-				#footer .copyright li:first-child {
-					margin: 0;
-					padding: 0;
-					border: 0;
-				}
 
 /* Wide */
 
