@@ -2210,7 +2210,8 @@ input, select, textarea {
 			background-repeat: no-repeat;
 			background-size: cover;
 			color: #fff;
-			padding: 2cm;
+			padding: 5cm;
+			margin: auto;
 		}
 
 			.wrapper.style2 input[type="button"]:hover,
