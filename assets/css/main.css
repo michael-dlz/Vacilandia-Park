@@ -3076,7 +3076,7 @@ input, select, textarea {
 
 	}
 
-	#main .special{
+	#main .cards{
 		padding: 0;
 		display: grid;
 		grid-template-columns: repeat(5, 1fr);
@@ -3085,25 +3085,25 @@ input, select, textarea {
 		margin-top: 1cm;
 	}
 
-	#main .special .card{
+	#main .cards .card{
 		width: 13rem;
 		padding: 0;
 	}
 
-	#main .special .card-img-top{
+	#main .cards .card-img-top{
 		height: 17rem;
 	}
 
-	#main .special .card-body:nth-child(1){
+	#main .cards .card-body:nth-child(1){
 		text-align: left;
 		background-color: #77C043;
 	}
 
-	#main .special .card-body:nth-child(2){
+	#main .cards .card-body:nth-child(2){
 		text-align: left;
 		background-color: #FFD200;
 	}
 
-	#main .special .card-text{
+	#main .cards .card-text{
 		color: #fff;
 	}
