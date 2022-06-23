@@ -2355,13 +2355,27 @@ input, select, textarea {
 					margin-left: 1.5em;
 					padding-left: 0;
 					padding: 5px;
-					background-color: #2BABE2;
+					background-color: #724C9F;
 					transition: 500ms;
 				}
 
 				#header nav ul li:nth-child(4){
 					background-color: #EA0B8B;
+					animation-name: bounce;
+					animation-duration: 500ms;
+					animation-iteration-count: infinite;
 				}
+
+				@keyframes bounce {
+					0%, 100% {
+					  transform: translateY(-25%);
+					  animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+					}
+					50% {
+					  transform: translateY(0);
+					  animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+					}
+				  }
 
 				#header nav ul li:hover{
 					padding-right: 15px;
@@ -2430,7 +2444,7 @@ input, select, textarea {
 			-webkit-animation: reveal-header 0.5s;
 			-ms-animation: reveal-header 0.5s;
 			animation: reveal-header 0.5s;
-			background: linear-gradient(to left, rgba(234, 11, 139 , 0.5) ,rgba(43, 171, 226 , 0.5), transparent, transparent);
+			background: linear-gradient(to left, rgba(234, 11, 139 , 0.5) ,rgba(67, 47, 135 , 0.5), transparent, transparent);
 		}
 
 		#header.alt {
