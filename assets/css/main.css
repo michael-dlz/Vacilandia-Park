@@ -2219,50 +2219,54 @@ input, select, textarea {
 		}
 
 		.wrapper.style2 {
-			background: linear-gradient( rgba(46, 47, 48, 0.2), rgba(33, 37, 43, 0.2) ), url("../../images/pic03.png");
+			background: linear-gradient(to right, transparent , rgba(119, 192, 67, 0.5) ), url("../../images/pic03.png");
 			background-position: center center; 
 			background-repeat: no-repeat;
 			background-size: cover;
 			color: #fff;
 			margin: auto;
 			background-attachment: fixed;
+			height: 27cm;
 		}
 
-		
-
-		.wrapper.style2 .soccer header h2{
-			font-size: 25px;
-			text-align: center;
+		.wrapper.style2 .container-fluid{
+			z-index: 99;
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			grid-template-rows: repeat(1, 1fr);
 		}
 
-			.wrapper.style2 input[type="button"]:hover,
-			.wrapper.style2 input[type="submit"]:hover,
-			.wrapper.style2 input[type="reset"]:hover,
-			.wrapper.style2 button:hover,
-			.wrapper.style2 .button:hover {
-				background: #77C043;
-				color: white;
-				border: none;
+		@media screen and (max-width: 1500px) {
+			.wrapper.style2 .container-fluid{
+				display: block;
+			}
+		}
+
+
+			.wrapper.style2 .img-pub{
+				display: flex;
+				justify-content: center;
 			}
 
-			.wrapper.style2 input[type="button"].primary,
-			.wrapper.style2 input[type="submit"].primary,
-			.wrapper.style2 input[type="reset"].primary,
-			.wrapper.style2 button.primary,
-			.wrapper.style2 .button.primary {
-				background: #fff;
-				border-color: #fff;
-				color:#724C9F !important;
+			.wrapper.style2 img{
+				width: 570px;
 			}
 
-				.wrapper.style2 input[type="button"].primary:hover,
-				.wrapper.style2 input[type="submit"].primary:hover,
-				.wrapper.style2 input[type="reset"].primary:hover,
-				.wrapper.style2 button.primary:hover,
-				.wrapper.style2 .button.primary:hover {
-					border-color: inherit !important;
-					color: #fff !important;
+			.wrapper.style2 h1{
+				text-align: center;
+				padding: 75px;
+			}
+
+			.wrapper.style2 p{
+				font-size: 2rem;
+				font-family: Centra;
+			}
+
+			@media screen and (max-width: 670px) {
+				.wrapper.style2 img{
+					width: 420px;
 				}
+			}
 
 		.wrapper.style3 {
 			background: #fff;
@@ -2565,7 +2569,7 @@ input, select, textarea {
 			padding: 4em;
 			text-align: center;
 			margin-bottom: -2cm;
-			background: linear-gradient(to right, rgba(67, 47, 135, 0.5), transparent );
+			background: linear-gradient(to right, rgba(43, 171, 226, 0.5), transparent );
 		}
 
 
@@ -2595,7 +2599,7 @@ input, select, textarea {
 				font-weight: bold;
 				font-size: 1rem;
 				font-family: Centra;
-				margin-top: 2cm;
+				margin-top: 1cm;
 				text-align: left;
 				margin-bottom: 3cm;
 			}
@@ -3097,7 +3101,6 @@ input, select, textarea {
 		text-align: center;
 		font-family: Serifblack;
 		font-size: 3rem;
-		margin-top: 2cm;
 	}
 
 	#main .cards{
@@ -3133,7 +3136,7 @@ input, select, textarea {
 		left: 0;
 		background: linear-gradient( #FFD200 0%, #FFD200 100% );
 		transform: translate3d(0px, 20px, 0) scale(0.95);
-		filter: blur(30px);
+		filter: blur(20px);
 		opacity: var(0.7);
 		transition: opacity 0.3s;
 		border-radius: inherit;
@@ -3161,7 +3164,7 @@ input, select, textarea {
 		left: 0;
 		background: linear-gradient( #77C043 0%, #77C043 100% );
 		transform: translate3d(0px, 20px, 0) scale(0.95);
-		filter: blur(30px);
+		filter: blur(200px);
 		opacity: var(0.7);
 		transition: opacity 0.3s;
 		border-radius: inherit;
@@ -3189,7 +3192,7 @@ input, select, textarea {
 		left: 0;
 		background: linear-gradient( #2BABE2 0%, #2BABE2 100% );
 		transform: translate3d(0px, 20px, 0) scale(0.95);
-		filter: blur(30px);
+		filter: blur(20px);
 		opacity: var(0.7);
 		transition: opacity 0.3s;
 		border-radius: inherit;
@@ -3217,7 +3220,7 @@ input, select, textarea {
 		left: 0;
 		background: linear-gradient( #EA0B8B 0%, #EA0B8B 100% );
 		transform: translate3d(0px, 20px, 0) scale(0.95);
-		filter: blur(30px);
+		filter: blur(20px);
 		opacity: var(0.7);
 		transition: opacity 0.3s;
 		border-radius: inherit;
@@ -3245,7 +3248,7 @@ input, select, textarea {
 		left: 0;
 		background: linear-gradient( #F58220 0%, #F58220 100% );
 		transform: translate3d(0px, 20px, 0) scale(0.95);
-		filter: blur(30px);
+		filter: blur(20px);
 		opacity: var(0.7);
 		transition: opacity 0.3s;
 		border-radius: inherit;
@@ -3286,18 +3289,6 @@ input, select, textarea {
 		color: #fff;
 	}
 
-	.ols{
-		position: relative;
-		margin-top: -6cm;
-		margin-bottom: -2.5cm;
-		margin-left: auto;
-		margin-left: auto;
-	}
-
-	.ols img{
-		width: 50.7cm;
-	}
-
 	@media screen and (max-width: 1000px){
 		#banner .inner{
 			width: 100%;
@@ -3316,14 +3307,12 @@ input, select, textarea {
 
 	footer .ols{
 		position: relative;
-		margin-top: -15cm;
-		margin-bottom: -2.5cm;
 		margin-left: auto;
 		margin-left: auto;
 	}
 
 	footer .ols img{
-		width: 50.7cm;
+		width: 44.7cm;
 	}
 	/* just for jsfiddle */
 @font-face {
