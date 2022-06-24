@@ -1742,6 +1742,14 @@ input, select, textarea {
 		padding-bottom: 2em;
 	}
 
+	#main .slides-pool{
+		margin: 0;
+		padding: 1px;
+		background-image: url(../../images/bg-w.png);
+		background-size: cover;
+		background-position: bottom;
+	}
+
 	header.special {
 		margin-bottom: 5em;
 		padding-top: 7em;
@@ -2050,6 +2058,10 @@ input, select, textarea {
 				padding-left: 0;
 			}
 
+				ul.icons li a{
+					margin-top: 3cm;
+				}
+
 /* Buttons */
 
 	ul.buttons {
@@ -2354,7 +2366,7 @@ input, select, textarea {
 					display: inline-block;
 					margin-left: 1.5em;
 					padding-left: 0;
-					padding: 5px;
+					padding: 7px;
 					background-color: #724C9F;
 					transition: 500ms;
 				}
@@ -2444,7 +2456,7 @@ input, select, textarea {
 			-webkit-animation: reveal-header 0.5s;
 			-ms-animation: reveal-header 0.5s;
 			animation: reveal-header 0.5s;
-			background: linear-gradient(to left, rgba(234, 11, 139 , 0.5) ,rgba(67, 47, 135 , 0.5), transparent, transparent);
+			background: linear-gradient(to left, rgba(234, 11, 139 , 0.5) ,rgba(67, 47, 135 , 0.5), transparent, transparent, transparent);
 		}
 
 		#header.alt {
@@ -2639,7 +2651,6 @@ input, select, textarea {
 	#footer {
 		background: #E8EEF4;
 		color: #7c8081;
-		padding: 5em 5em 10em 5em;
 		text-align: center;
 	}
 
@@ -2709,13 +2720,6 @@ input, select, textarea {
 				padding: 4em;
 				background-attachment: scroll;
 			}
-
-		/* Footer */
-
-			#footer {
-				padding: 4em;
-			}
-
 	}
 
 /* Narrow */
@@ -2911,12 +2915,6 @@ input, select, textarea {
 				margin: 0;
 			}
 
-		/* Footer */
-
-			#footer {
-				padding: 4em 1.5em;
-			}
-
 		/* Nav */
 
 			#page-wrapper {
@@ -3109,6 +3107,7 @@ input, select, textarea {
 		grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));
 		margin-top: 3cm;
 		gap: 35px;
+		z-index: 99;
 
 	}
 
@@ -3315,6 +3314,17 @@ input, select, textarea {
 		}
 	}
 
+	footer .ols{
+		position: relative;
+		margin-top: -15cm;
+		margin-bottom: -2.5cm;
+		margin-left: auto;
+		margin-left: auto;
+	}
+
+	footer .ols img{
+		width: 50.7cm;
+	}
 	/* just for jsfiddle */
 @font-face {
 	font-family: 'Material Icons';
