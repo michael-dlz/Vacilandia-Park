@@ -2554,6 +2554,7 @@ input, select, textarea {
 		text-align: right;
 		background-attachment: fixed;
 		background-size: cover;
+		filter: saturate(200%);
 	}
 
 		#banner .inner {
@@ -2566,16 +2567,21 @@ input, select, textarea {
 			-ms-animation-fill-mode: forwards;
 			animation-fill-mode: forwards;
 			color: #fff;
-			padding: 4em;
+			padding: 6em;
 			text-align: center;
-			margin-bottom: -2cm;
-			background: linear-gradient(to right, rgba(43, 171, 226, 0.5), transparent );
+			margin-bottom: -4cm;
+			bsackground: linear-gradient(to right, rgba(67, 47, 135, 0.4),rgba(114, 76, 159, 0.4), rgba(256, 33, 39, 0.4), rgba(234, 11, 139, 0.4), rgba(43, 171, 226, 0.4), rgba(119, 192, 167, 0.4),rgba(245, 130, 32, 0.4), rgba(255, 210, 0, 0.4),transparent );
 		}
 
+		#banner .agent{
+			margin-top: 2cm;
+			display: flex;
+			justify-content: center;
+		}
 
-		#banner .inner img{
-			width: 200px;
-			margin-bottom: 3em;
+		#banner .agent img{
+			width: 500px;
+			filter: saturate(100%);
 		}
 
 			#banner .inner header {
@@ -2583,7 +2589,7 @@ input, select, textarea {
 			}
 
 				#banner .inner header h2 {
-					font-size: 2.5em;
+					font-size: 1em;
 					font-weight: 900;
 					letter-spacing: 0.2em;
 					margin: 0;
@@ -2597,17 +2603,27 @@ input, select, textarea {
 				margin: 0;
 				text-transform: uppercase;
 				font-weight: bold;
-				font-size: 1rem;
+				font-size: 1em;
 				font-family: Centra;
-				margin-top: 1cm;
+				margin-top: 0.3cm;
 				text-align: left;
 				margin-bottom: 3cm;
+				background: linear-gradient(to right , rgba(67, 47, 135, 0.6),rgba(67, 47, 135, 0.6), transparent);
+				padding: 20px;
+				width: 40rem;
+				border-radius: 20px;
+				transition: 500ms;
 			}
 
 			#banner .inner h2{
+				font-size: 1.5em;
 				font-family: Serifblack;
 				margin-top: 3cm;
 				text-align: left;
+				background: linear-gradient(to right , rgba(234, 11, 139, 0.6),rgba(234, 11, 139, 0.6), transparent);
+				padding: 20px;
+				width: 25rem;
+				border-radius: 20px;
 			}
 
 				#banner .inner p a {
