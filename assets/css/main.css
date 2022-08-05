@@ -271,6 +271,9 @@ input, select, textarea {
 		flex-wrap: wrap;
 		box-sizing: border-box;
 		align-items: stretch;
+		margin-bottom: -5cm;
+		margin-left: 0 !important;
+		padding: 0 !important;
 	}
 
 		.row > * {
@@ -2570,17 +2573,18 @@ input, select, textarea {
 			padding: 6em;
 			text-align: center;
 			margin-bottom: -4cm;
-			bsackground: linear-gradient(to right, rgba(67, 47, 135, 0.4),rgba(114, 76, 159, 0.4), rgba(256, 33, 39, 0.4), rgba(234, 11, 139, 0.4), rgba(43, 171, 226, 0.4), rgba(119, 192, 167, 0.4),rgba(245, 130, 32, 0.4), rgba(255, 210, 0, 0.4),transparent );
 		}
 
 		#banner .agent{
 			margin-top: 2cm;
 			display: flex;
 			justify-content: center;
+			background: linear-gradient(to right, transparent,rgba(114, 76, 159, 0.4));
+			margin: 0 !important;
 		}
 
 		#banner .agent img{
-			width: 500px;
+			width: 450px;
 			filter: saturate(100%);
 		}
 
