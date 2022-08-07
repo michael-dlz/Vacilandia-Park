@@ -1,0 +1,136 @@
+:root{
+    --color-primary: #724C9F;
+    --rgba-primary: rgba(114, 76, 159,0.5);
+    --color-secondary: 
+    #EA0B8B;
+    --rgba-secondary: rgba(234, 11, 139,0.5);
+    --color-white: #fff;
+    --rgba-white: rgba(255, 255, 255);
+    --color-dark: #000;
+    --rgba-dark: 	rgb(0, 0, 0);
+    --color-red:#EC2127;
+    --rgba-red: rgba(236, 33, 39);
+    --color-orange: 
+    #F58220;
+    --rgba-orange:rgba(245, 130, 32);
+    --color-yellow: #FFD200;
+    --rgba-yellow: rgba(255, 210, 0);
+    --color-cyan: #2BABE2;
+    --rgba-cyan: rgba(43, 171, 226);
+    --color-green: #77C043;
+    --rgba-green:rgba(119, 192, 67);
+    --color-purple:#432F87;
+    --rgba-purple: 	rgba(67, 47, 135);
+    --img-width-logo: 130px;
+    --img-width-agent: 350px;
+    --nav-padding: 9px;
+    --text-padding: 15px;
+    --border-radius: 20px;
+    --animation-duration: 1300ms;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+ul, dl, ol{
+    padding: 0;
+}
+
+.container-fluid{
+    padding: 0;
+}
+
+body{
+}
+
+/** ESTILOS HEADER/NAV **/
+
+header{
+    background-image: url(images/vaci5.png);
+    filter: saturate(200%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+header #nav{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 30px;
+    background: transparent;
+}
+
+header .pages{
+    display: flex;
+    gap: 1em;
+    padding: 20px;
+    color: var(--color-white);
+    font-weight: bold;
+}
+
+header .pages li{
+    background-color: var(--color-secondary);
+    padding: var(--nav-padding);
+    width: 8em;
+    height: 2.5em;
+    text-align: center;
+    font-weight: bold;
+    border-radius: var(--border-radius);
+}
+
+header .pages li:nth-child(4){
+    background-color: var(--color-orange);
+    animation: pulse;
+    animation-duration: 1000ms;
+    animation-iteration-count: infinite;
+}
+
+header .logo img{
+    width: var(--img-width-logo);
+    padding: 0;
+}
+
+/** ESTILOS INNER **/
+
+header #inner{
+    padding-top: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+header #inner #title{
+    margin: auto;
+}
+
+header h1{
+    background: linear-gradient(to right , var(--rgba-secondary), transparent);
+    color: var(--color-white);
+    padding: var(--text-padding);
+    border-radius: var(--border-radius);
+    animation: bounceIn;
+    animation-duration: var(--animation-duration);
+}
+
+header p{
+    background: linear-gradient(to right, var(--rgba-purple), transparent);
+    padding: var(--text-padding);
+    border-radius: var(--border-radius);
+    color: var(--color-white);
+    font-weight: bold;
+    animation: bounceIn;
+    animation-duration: var(--animation-duration);
+}
+
+header #inner #agent{
+    display: flex;
+    justify-content: center;
+}
+
+header #inner img{
+    width: var(--img-width-agent);
+}
