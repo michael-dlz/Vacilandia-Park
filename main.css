@@ -1,32 +1,58 @@
 :root{
+    /** COLORS **/
     --color-primary: #724C9F;
-    --rgba-primary: rgba(114, 76, 159,0.5);
+    --color-white: #fff;
     --color-secondary: 
     #EA0B8B;
-    --rgba-secondary: rgba(234, 11, 139,0.5);
-    --color-white: #fff;
-    --rgba-white: rgba(255, 255, 255);
     --color-dark: #000;
-    --rgba-dark: 	rgb(0, 0, 0);
     --color-red:#EC2127;
-    --rgba-red: rgba(236, 33, 39);
     --color-orange: 
     #F58220;
-    --rgba-orange:rgba(245, 130, 32);
-    --color-yellow: #FFD200;
-    --rgba-yellow: rgba(255, 210, 0);
-    --color-cyan: #2BABE2;
-    --rgba-cyan: rgba(43, 171, 226);
-    --color-green: #77C043;
-    --rgba-green:rgba(119, 192, 67);
     --color-purple:#432F87;
-    --rgba-purple: 	rgba(67, 47, 135);
+    --color-cyan: #2BABE2;
+    --color-yellow: #FFD200;
+    --color-green: #77C043;
+    /** GRADIENTS **/
+    --gradient-primary: rgba(114, 76, 159,0.3);
+    --gradient-secondary:rgba(234, 11, 139,0.1);
+    --gradient-orange: rgba(245, 130, 32, 0.2);
+    --gradient-cyan:rgba(43, 171, 226, 0.2);
+    --gradient-green: rgba(119, 192, 67,0.2);
+    --gradient-purple: rgba(67, 47, 135, 0.6);
+    /** RGBA **/
+    --rgba-primary: rgba(114, 76, 159);
+    --rgba-secondary: rgba(234, 11, 139, 0.8);
+    --rgba-white: rgba(255, 255, 255);
+    --rgba-dark: 	rgb(0, 0, 0);
+    --rgba-red: rgba(236, 33, 39, 0.8);
+    --rgba-orange:rgba(245, 130, 32, 0.8);
+    --rgba-yellow: rgba(255, 210, 0);
+    --rgba-cyan: rgba(43, 171, 226);
+    --rgba-green:rgba(119, 192, 67,0.8);
+    --rgba-purple: 	rgba(67, 47, 135, 0.8);
+    /** WIDTH **/
     --img-width-logo: 130px;
-    --img-width-agent: 350px;
+    --img-width-agent: 450px;
+    /** PADDING **/
     --nav-padding: 9px;
     --text-padding: 15px;
-    --border-radius: 20px;
+    --general-padding: 100px;
+    /** GENERALS **/
     --animation-duration: 1300ms;
+    --font-text-primary: Serifblack;
+    --font-text-secondary: Centra;
+    --box-shadow: 0px 0px 0px 0px;
+    --border-radius: 20px;
+}
+
+@font-face {
+    font-family: Serifblack;
+    src: url(fonts/Serifblack.otf);
+}
+
+@font-face {
+    font-family: Centra;
+    src: url(fonts/Centra.ttf);
 }
 
 *{
@@ -38,6 +64,12 @@
 }
 
 ul, dl, ol{
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
     padding: 0;
 }
 
@@ -45,13 +77,10 @@ ul, dl, ol{
     padding: 0;
 }
 
-body{
-}
-
 /** ESTILOS HEADER/NAV **/
 
 header{
-    background-image: url(images/vaci5.png);
+    background: linear-gradient(to top, var(--gradient-purple), transparent), url(images/vaci5.png);
     filter: saturate(200%);
     background-size: cover;
     background-repeat: no-repeat;
@@ -60,7 +89,9 @@ header{
 
 header #nav{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding-left: var(--general-padding);
+    padding-right: var(--general-padding);
     padding-top: 30px;
     background: transparent;
 }
@@ -74,17 +105,17 @@ header .pages{
 }
 
 header .pages li{
-    background-color: var(--color-secondary);
+    background-color: var(--color-purple);
     padding: var(--nav-padding);
     width: 8em;
     height: 2.5em;
     text-align: center;
     font-weight: bold;
-    border-radius: var(--border-radius);
+    font-family: var(--font-text-secondary);
 }
 
 header .pages li:nth-child(4){
-    background-color: var(--color-orange);
+    background-color: var(--color-secondary);
     animation: pulse;
     animation-duration: 1000ms;
     animation-iteration-count: infinite;
@@ -98,9 +129,10 @@ header .logo img{
 /** ESTILOS INNER **/
 
 header #inner{
-    padding-top: 50px;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-top: 10px;
+    padding-left: var(--general-padding);
+    padding-right: var(--general-padding);
+    height: 12cm;
 }
 
 header #inner #title{
@@ -114,16 +146,19 @@ header h1{
     border-radius: var(--border-radius);
     animation: bounceIn;
     animation-duration: var(--animation-duration);
+    font-family: var(--font-text-primary);
+    margin-bottom: 0.5rem;
 }
 
 header p{
-    background: linear-gradient(to right, var(--rgba-purple), transparent);
+    background: linear-gradient(to right, var(--rgba-red), transparent);
     padding: var(--text-padding);
     border-radius: var(--border-radius);
     color: var(--color-white);
     font-weight: bold;
     animation: bounceIn;
     animation-duration: var(--animation-duration);
+    font-family: var(--font-text-secondary);
 }
 
 header #inner #agent{
@@ -133,4 +168,58 @@ header #inner #agent{
 
 header #inner img{
     width: var(--img-width-agent);
+}
+
+/** ESTILOS SECTION **/
+
+#section{
+    background-image: url(images/wave-haikei.svg);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    padding-top: 60px;
+    padding-left: var(--general-padding);
+    padding-right: var(--general-padding);
+}
+
+#section .card{
+    width: 7cm;
+    margin: auto;
+    border: none;
+    padding: 0;
+}
+
+#section .card .card-img{
+    height: 6cm;
+}
+
+#section #cards #card-1{
+    background-color: var(--color-green);
+    box-shadow: var(--box-shadow) var(--rgba-green);
+}
+
+#section #cards #card-2{
+    background-color: var(--color-orange);
+    box-shadow: var(--box-shadow) var(--rgba-orange);
+}
+
+#section #cards #card-3{
+    background-color: var(--color-red);
+    box-shadow: var(--box-shadow) var(--rgba-red);
+}
+
+#section #cards #card-4{
+    background-color: var(--color-secondary);
+    box-shadow: var(--box-shadow) var(--rgba-secondary);
+}
+
+#section .card h1{
+    font-family: var(--font-text-secondary);
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--color-white);
+}
+
+#section .card p{
+    color: var(--color-white);
 }
